@@ -1,8 +1,8 @@
 <?php
 /**
- * @version   1.5 August 18, 2011
+ * @version   1.8 November 13, 2012
  * @author    RocketTheme, LLC http://www.rockettheme.com
- * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
  */
 /*
@@ -10,7 +10,7 @@ Plugin Name: RokNewsFlash
 Plugin URI: http://www.rockettheme.com
 Description: RokNewsFlash is widget to display brief snippets of an post. The plugin is perfect for Headlines as it can cycle through your chosen posts, displaying the content item title or a preview of the content itself.
 Author: RocketTheme, LLC
-Version: 1.5
+Version: 1.8
 Author URI: http://www.rockettheme.com
 License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
 */
@@ -24,7 +24,15 @@ if (!defined('DS')) {
 // Globals
 
 global $roknewsflash_plugin_path, $roknewsflash_plugin_url, $browser_platform, $browser_name, $browser_version;
-$roknewsflash_plugin_path = dirname($plugin);
+if(!is_multisite()) {
+    $roknewsflash_plugin_path = dirname($plugin);
+} else {
+	if(!empty($network_plugin)) {
+		$roknewsflash_plugin_path = dirname($network_plugin);
+	} else {
+		$roknewsflash_plugin_path = dirname($plugin);
+	}
+}
 $roknewsflash_plugin_url = WP_PLUGIN_URL.'/'.basename($roknewsflash_plugin_path);
 
 require(dirname(__FILE__). DS .'rokbrowsercheck.php');

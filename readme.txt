@@ -3,7 +3,7 @@ Contributors: rockettheme
 Author URI: http://rockettheme.com
 Tags: roknewsflash, widget, snippet, headlines, mootools, preview, animated, cycle, rockettheme
 Requires at least: 3.0
-Tested up to: 3.2.1
+Tested up to: 3.4.2
 Stable tag: trunk
 
 RokNewsFlash is widget to display brief snippets of an post. The plugin is perfect for Headlines as it can cycle through your chosen posts.
@@ -44,6 +44,16 @@ RokNewsFlash is a widget, so all of the options can be found in the widget panel
 1. Default widget styling for light style.
 
 == Changelog ==
+
+= 1.8 =
+* Updated MooTools to 1.4.5
+* Added RTL fix
+
+= 1.7 =
+* Fixed plugin path on certain multisite installations
+
+= 1.6 =
+* Support for the WPMU installations
 
 = 1.5 =
 * Initial release to WordPress.org plugins directory

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the RokNewsFlash package.
 msgid ""
 msgstr ""
-"Project-Id-Version: RokNewsFlash 1.5\n"
+"Project-Id-Version: RokNewsFlash 1.8\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/roknewsflash\n"
 "POT-Creation-Date: 2011-06-21 19:29:05+00:00\n"
 "MIME-Version: 1.0\n"

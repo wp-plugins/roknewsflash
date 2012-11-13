@@ -9,3 +9,6 @@ body div#newsflash.roknewsflash {border:0;margin:10px 0;position:relative;height
 .roknewsflash .flashing {position:absolute;top:0;left:0;line-height:21px;font-weight:bold;}
 .roknewsflash ul {margin:0;padding:0;margin-right:60px;}
 .roknewsflash li {list-style:none;margin:0;padding:0;line-height:21px;}
+/* rtl */
+.rtl .roknewsflash .controls { right: auto; left: 0; }
+.rtl .roknewsflash .flashing { left: auto; right: 0; }
